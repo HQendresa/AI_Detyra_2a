@@ -31,6 +31,6 @@ bool isSafe(int board[N][N], int row, int col)
 
 int main() {
 
-    printf("Working just fine");
+    
 	return 0;
 }
