@@ -55,7 +55,12 @@ bool solveNQUtil(int board[N][N], int col)
 }
 
 int main() {
+    int board[N][N] = { { 0, 0, 0, 0 },
+                       { 0, 0, 0, 0 },
+                       { 0, 0, 0, 0 },
+                       { 0, 0, 0, 0 } };
 
-    printf("Working fine");
+    printSolution(board);
+    return true;
 	return 0;
 }
