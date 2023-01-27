@@ -29,6 +29,7 @@ bool isSafe(int board[N][N], int row, int col)
     return true;
 }
 
+// funksioni me poshte perdore backtracking
 bool solveNQUtil(int board[N][N], int col)
 {
     if (col >= N)
@@ -59,6 +60,11 @@ int main() {
                        { 0, 0, 0, 0 },
                        { 0, 0, 0, 0 },
                        { 0, 0, 0, 0 } };
+
+    if (solveNQUtil(board, 0) == false) {
+        printf("Solution does not exist");
+        return 0;
+    }
 
     printSolution(board);
     return true;
